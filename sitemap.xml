@@ -4,12 +4,17 @@
 
     <sitemap>
         <loc>http://hjw322.vip/post-sitemap.xml</loc>
-        <lastmod>2019-07-18T13:40:59.629Z</lastmod>
+        <lastmod>2019-07-19T06:23:33.914Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>http://hjw322.vip/page-sitemap.xml</loc>
         <lastmod>2019-07-18T08:30:11.049Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>http://hjw322.vip/tag-sitemap.xml</loc>
+        <lastmod>2019-07-19T06:23:33.914Z</lastmod>
     </sitemap>
 
 </sitemapindex>
