@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>http://hjw322.vip/tags/CTF/</loc>
+        <lastmod>2019-08-10T15:38:54.414Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://hjw322.vip/tags/hexo/</loc>
         <lastmod>2019-07-20T14:46:16.035Z</lastmod>
         <changefreq>weekly</changefreq>

@@ -15,17 +15,21 @@
 
 
 
-<meta name="description" content="嘻嘻">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://hjw322.vip/about/index.html">
+<meta name="description" content="目前的writeup只有前面的一些简单题，其它的题等我会做了，我会更新此文章。">
+<meta name="keywords" content="CTF">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【BugkuCTF】杂项writeup">
+<meta property="og:url" content="http://hjw322.vip/2019/08/10/【BugkuCTF】杂项writeup/index.html">
 <meta property="og:site_name" content="文的个人博客">
-<meta property="og:description" content="嘻嘻">
+<meta property="og:description" content="目前的writeup只有前面的一些简单题，其它的题等我会做了，我会更新此文章。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-16T15:05:45.682Z">
+<meta property="og:image" content="https://i.loli.net/2019/08/10/nrcgqaoVtNBpMCu.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/10/uz71BcAXdwqNFLn.jpg">
+<meta property="og:updated_time" content="2019-08-10T15:38:54.414Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="嘻嘻">
+<meta name="twitter:title" content="【BugkuCTF】杂项writeup">
+<meta name="twitter:description" content="目前的writeup只有前面的一些简单题，其它的题等我会做了，我会更新此文章。">
+<meta name="twitter:image" content="https://i.loli.net/2019/08/10/nrcgqaoVtNBpMCu.jpg">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -57,7 +61,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>about | 文的个人博客</title>
+<title>【BugkuCTF】杂项writeup | 文的个人博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -67,7 +71,7 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -280,11 +284,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-【BugkuCTF】杂项writeup" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/about/index.html" class="article-date">
-      <time datetime="2019-07-16T15:05:45.000Z" itemprop="datePublished">2019-07-16</time>
+      <a href="/2019/08/10/【BugkuCTF】杂项writeup/" class="article-date">
+      <time datetime="2019-08-10T15:38:54.414Z" itemprop="datePublished">2019-08-10</time>
 </a>
     </div>
   
@@ -297,7 +301,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      【BugkuCTF】杂项writeup
     </h1>
   
 
@@ -307,6 +311,10 @@
         
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CTF/">CTF</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -314,36 +322,70 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta { display: none; }
-    #container .article .article-title { padding-right: 0; }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover { border-left: none; }
-    .article-title { font-size: 1.6em }
-    .article-entry hr { margin: 0;}
-    .article-meta,
-    #container .article-info-post.article-info { display: none;}
-    #container .article .article-title { padding: 0; }
-</style>
+        <p>目前的writeup只有前面的一些简单题，其它的题等我会做了，我会更新此文章。</p>
+<a id="more"></a>
 
-
-          
-        
+<h2 id="签到题"><a href="#签到题" class="headerlink" title="签到题"></a>签到题</h2><p>这道题就没有什么说的了，扫二维码。</p>
+<h2 id="这是一张单纯的图片"><a href="#这是一张单纯的图片" class="headerlink" title="这是一张单纯的图片"></a>这是一张单纯的图片</h2><p>Hex打开，滑到最后，可看到</p>
+<p><img src="https://i.loli.net/2019/08/10/nrcgqaoVtNBpMCu.jpg" alt></p>
+<p>复制那些特殊的字符串(此为unicode编码）用工具转ascll即可得到flag。</p>
+<p>工具链接：<a href="http://tool.chinaz.com/tools/unicode.aspx" target="_blank" rel="noopener">http://tool.chinaz.com/tools/unicode.aspx</a></p>
+<h2 id="隐写"><a href="#隐写" class="headerlink" title="隐写"></a>隐写</h2><p>解压缩后发现此图片打不开，这张情况一般是修改了图片的高度或者宽度，用Hex打开，修改图片的高度，再用StegSolve打开即可看到flag。</p>
+<p><img src="https://i.loli.net/2019/08/10/uz71BcAXdwqNFLn.jpg" alt></p>
+<h2 id="telnet"><a href="#telnet" class="headerlink" title="telnet"></a>telnet</h2>
       
     </div>
     
   </div>
   
     
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2019/08/10/【BugkuCTF】杂项writeup/">【BugkuCTF】杂项writeup</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">hjw</a></p>
+        <p><span>发布时间:</span>2019-08-10, 23:38:54</p>
+        <p><span>最后更新:</span>2019-08-10, 23:38:54</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2019/08/10/【BugkuCTF】杂项writeup/" title="【BugkuCTF】杂项writeup">http://hjw322.vip/2019/08/10/【BugkuCTF】杂项writeup/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://hjw322.vip/2019/08/10/【BugkuCTF】杂项writeup/　　作者: hjw" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2019/07/18/mac下使用hexo+github简单搭建个人博客/">
+                    mac下使用hexo+github简单搭建个人博客
+                </a>
+            </div>
+        
+    </nav>
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#签到题"><span class="toc-number">1.</span> <span class="toc-text">签到题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#这是一张单纯的图片"><span class="toc-number">2.</span> <span class="toc-text">这是一张单纯的图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#隐写"><span class="toc-number">3.</span> <span class="toc-text">隐写</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#telnet"><span class="toc-number">4.</span> <span class="toc-text">telnet</span></a></li></ol>
+</div>
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script>
+    yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+</script>
 
 
 
@@ -361,7 +403,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"about　| 文的个人博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"【BugkuCTF】杂项writeup　| 文的个人博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -400,6 +442,24 @@ e.parentNode.insertBefore(j, e);
 
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2019/07/18/mac下使用hexo+github简单搭建个人博客/" title="下一篇: mac下使用hexo+github简单搭建个人博客">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/08/10/【BugkuCTF】杂项writeup/">【BugkuCTF】杂项writeup</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/18/mac下使用hexo+github简单搭建个人博客/">mac下使用hexo+github简单搭建个人博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/16/hello-world/">Hello World</a></li></ul>
 
 
 
