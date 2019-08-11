@@ -33,7 +33,18 @@
 <meta property="og:image" content="https://i.loli.net/2019/08/11/p7DQkTzJRKNB8hv.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/08/11/258KdOJpFLVhivQ.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/08/11/MwP3dclEYTvOkiZ.jpg">
-<meta property="og:updated_time" content="2019-08-11T04:53:07.248Z">
+<meta property="og:image" content="https://i.loli.net/2019/08/11/Tgwq58WCb2IZdnf.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/11/KDFn278koIHiXjT.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/11/D9253sNmaXAikpl.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/11/uUrBknQtyDHYZJ4.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/11/29hDsCdF7qMpzH8.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/11/C4fYLkjAwbcxd8u.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/11/ViNHgYLGj1PEmC6.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/11/bRNpUunT6HFX8Ef.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/11/FRkonWbBi7XpMHC.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/11/EKv7FCnUmyiJNao.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/11/svzAL1iWR6tpgnG.jpg">
+<meta property="og:updated_time" content="2019-08-11T07:51:27.179Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【BugkuCTF】杂项writeup">
 <meta name="twitter:description" content="目前的writeup只有前面的一些简单题，其它的题等我会做了，我会更新此文章。">
@@ -334,7 +345,7 @@
 <a id="more"></a>
 
 <h2 id="签到题"><a href="#签到题" class="headerlink" title="签到题"></a>签到题</h2><p>这道题就没有什么说的了，扫二维码。</p>
-<h2 id="这是一张单纯的图片"><a href="#这是一张单纯的图片" class="headerlink" title="这是一张单纯的图片"></a>这是一张单纯的图片</h2><p>Hex打开，滑到最后，可看到</p>
+<h2 id="这是一张单纯的图片"><a href="#这是一张单纯的图片" class="headerlink" title="这是一张单纯的图片"></a>这是一张单纯的图片</h2><p>Hex Fiend打开，滑到最后，可看到</p>
 <img src="https://i.loli.net/2019/08/10/nrcgqaoVtNBpMCu.jpg" width="300">
 
 <p>复制那些特殊的字符串(此为unicode编码）用工具转ascll即可得到flag。</p>
@@ -351,7 +362,7 @@
 
 <h2 id="啊哒"><a href="#啊哒" class="headerlink" title="啊哒"></a>啊哒</h2><p>解压后是一张jpg图片，Hex打开查找文件尾 FFD9 ，可看到它之后有一个zip文件头，从504B开始复制粘贴新建一个文件。也可以使用 binwalk、foremost 等工具分离zip压缩包。</p>
 <img src="https://i.loli.net/2019/08/11/yci82AeH9maV4hq.jpg" width="300">
-
+<br>
 <img src="https://i.loli.net/2019/08/11/IV8iKlmNDYs6Z3L.jpg" width="300">
 
 <p>发现该zip文件需要密码，之前的表情包图片的属性中有个设备型号，将该型号进行16进制解码可得压缩包的密码。</p>
@@ -360,10 +371,47 @@
 <p>压缩包打开后可得flag。</p>
 <h2 id="又一张图片，还单纯吗"><a href="#又一张图片，还单纯吗" class="headerlink" title="又一张图片，还单纯吗"></a>又一张图片，还单纯吗</h2><p>使用工具 binwalk 发现该图片有隐藏文件，再使用 foremost 分离出来得到一张含有flag的图片。</p>
 <img src="https://i.loli.net/2019/08/11/p7DQkTzJRKNB8hv.jpg" width="300">
-
+<br>
 <img src="https://i.loli.net/2019/08/11/258KdOJpFLVhivQ.jpg" width="300">
-
+<br>
 <img src="https://i.loli.net/2019/08/11/MwP3dclEYTvOkiZ.jpg" width="300">
+
+<h2 id="猜"><a href="#猜" class="headerlink" title="猜"></a>猜</h2><p>直接百度识图</p>
+<img src="https://i.loli.net/2019/08/11/Tgwq58WCb2IZdnf.jpg" width="300">
+<br>
+<img src="https://i.loli.net/2019/08/11/KDFn278koIHiXjT.jpg" width="300">
+
+<h2 id="隐写2"><a href="#隐写2" class="headerlink" title="隐写2"></a>隐写2</h2><p>foremost分离出一个压缩包打开后有一张提示图片和一个压缩包，根据提示可知，king、Athens、梅花J，对应数字8、1、7。密码即为这3个数的组合，最终密码为871。</p>
+<p>得到的rar压缩包的文件头为504B，则改后缀为zip。打开后得到一张图片，用Hex打开在尾部发现 f1@g{eTB1IEFyZSBhIGhAY2tlciE=}</p>
+<p>将 eTB1IEFyZSBhIGhAY2tlciE= 用base64解码即可得flag。</p>
+<p>flag为 f1@g{y0u Are a h@cker!}</p>
+<p>对与此压缩包，可以直接用fcrackzip进行爆破。</p>
+<p><img src="https://i.loli.net/2019/08/11/D9253sNmaXAikpl.jpg" width="300"></p>
+<h2 id="多种方法解决"><a href="#多种方法解决" class="headerlink" title="多种方法解决"></a>多种方法解决</h2><p>将exe文件用Hex打开可发现此文件并不是一个真的exe文件。</p>
+<img src="https://i.loli.net/2019/08/11/uUrBknQtyDHYZJ4.jpg" width="300">
+
+<p>将右边的文本用base64解码得一张二维码图片，扫码可得flag。</p>
+<p><img src="https://i.loli.net/2019/08/11/29hDsCdF7qMpzH8.jpg" width="300"></p>
+<p>转换工具：<a href="http://imgbase64.duoshitong.com/" target="_blank" rel="noopener">http://imgbase64.duoshitong.com/</a></p>
+<h2 id="闪的好快"><a href="#闪的好快" class="headerlink" title="闪的好快"></a>闪的好快</h2><p>用StegSolve打开，依次选择Analyse、Frame Browser。</p>
+<img src="https://i.loli.net/2019/08/11/C4fYLkjAwbcxd8u.jpg" width="300">
+
+<p>18张二维码依次扫描连起来即为flag，为</p>
+<p><code>SYC{F1aSh_so_f4sT}</code></p>
+<h2 id="白哥的鸽子"><a href="#白哥的鸽子" class="headerlink" title="白哥的鸽子"></a>白哥的鸽子</h2><p>增加后缀jpg，在hex中打开发现末尾为</p>
+<img src="https://i.loli.net/2019/08/11/ViNHgYLGj1PEmC6.jpg" width="300">
+
+<p>猜测这种形式多半与flag有关，用删栏密码破解得flag</p>
+<img src="https://i.loli.net/2019/08/11/bRNpUunT6HFX8Ef.jpg" width="300">
+
+<p>删栏密码破解网站：<a href="https://www.qqxiuzi.cn/bianma/zhalanmima.php" target="_blank" rel="noopener">https://www.qqxiuzi.cn/bianma/zhalanmima.php</a></p>
+<h2 id="linux"><a href="#linux" class="headerlink" title="linux"></a>linux</h2><p>连续两次解压后得test文件夹，其含有flag文件，使用<code>cat</code>命令即可看flag。</p>
+<img src="https://i.loli.net/2019/08/11/FRkonWbBi7XpMHC.jpg" width="300">
+
+<h2 id="隐写3"><a href="#隐写3" class="headerlink" title="隐写3"></a>隐写3</h2><p>用StegSolve打开，很明显该图片被修改了高度，则在Hex中修改高度即可看到flag。</p>
+<p><img src="https://i.loli.net/2019/08/11/EKv7FCnUmyiJNao.jpg" width="300"></p>
+<h2 id="做个游戏-08067CTF"><a href="#做个游戏-08067CTF" class="headerlink" title="做个游戏(08067CTF)"></a>做个游戏(08067CTF)</h2><p>将heiheihei.jar用JD-GUI打开，在PlaneGameFrame.class中可看到flag</p>
+<p><img src="https://i.loli.net/2019/08/11/svzAL1iWR6tpgnG.jpg" width="300"></p>
 
       
     </div>
@@ -375,7 +423,7 @@
         <p><span>本文标题:</span><a href="/2019/08/10/【BugkuCTF】杂项writeup/">【BugkuCTF】杂项writeup</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">hjw</a></p>
         <p><span>发布时间:</span>2019-08-10, 23:38:54</p>
-        <p><span>最后更新:</span>2019-08-11, 12:53:07</p>
+        <p><span>最后更新:</span>2019-08-11, 15:51:27</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2019/08/10/【BugkuCTF】杂项writeup/" title="【BugkuCTF】杂项writeup">http://hjw322.vip/2019/08/10/【BugkuCTF】杂项writeup/</a>
             <span class="copy-path" data-clipboard-text="原文: http://hjw322.vip/2019/08/10/【BugkuCTF】杂项writeup/　　作者: hjw" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -404,7 +452,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#签到题"><span class="toc-number">1.</span> <span class="toc-text">签到题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#这是一张单纯的图片"><span class="toc-number">2.</span> <span class="toc-text">这是一张单纯的图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#隐写"><span class="toc-number">3.</span> <span class="toc-text">隐写</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#telnet"><span class="toc-number">4.</span> <span class="toc-text">telnet</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#眼见非实-ISCCCTF"><span class="toc-number">5.</span> <span class="toc-text">眼见非实(ISCCCTF)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#啊哒"><span class="toc-number">6.</span> <span class="toc-text">啊哒</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#又一张图片，还单纯吗"><span class="toc-number">7.</span> <span class="toc-text">又一张图片，还单纯吗</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#签到题"><span class="toc-number">1.</span> <span class="toc-text">签到题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#这是一张单纯的图片"><span class="toc-number">2.</span> <span class="toc-text">这是一张单纯的图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#隐写"><span class="toc-number">3.</span> <span class="toc-text">隐写</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#telnet"><span class="toc-number">4.</span> <span class="toc-text">telnet</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#眼见非实-ISCCCTF"><span class="toc-number">5.</span> <span class="toc-text">眼见非实(ISCCCTF)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#啊哒"><span class="toc-number">6.</span> <span class="toc-text">啊哒</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#又一张图片，还单纯吗"><span class="toc-number">7.</span> <span class="toc-text">又一张图片，还单纯吗</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#猜"><span class="toc-number">8.</span> <span class="toc-text">猜</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#隐写2"><span class="toc-number">9.</span> <span class="toc-text">隐写2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多种方法解决"><span class="toc-number">10.</span> <span class="toc-text">多种方法解决</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#闪的好快"><span class="toc-number">11.</span> <span class="toc-text">闪的好快</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#白哥的鸽子"><span class="toc-number">12.</span> <span class="toc-text">白哥的鸽子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux"><span class="toc-number">13.</span> <span class="toc-text">linux</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#隐写3"><span class="toc-number">14.</span> <span class="toc-text">隐写3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#做个游戏-08067CTF"><span class="toc-number">15.</span> <span class="toc-text">做个游戏(08067CTF)</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn,
