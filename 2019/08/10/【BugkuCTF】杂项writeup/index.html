@@ -20,7 +20,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="【BugkuCTF】杂项writeup">
 <meta property="og:url" content="http://hjw322.vip/2019/08/10/【BugkuCTF】杂项writeup/index.html">
-<meta property="og:site_name" content="文的个人博客">
+<meta property="og:site_name" content="Wen&#39;s Blog">
 <meta property="og:description" content="目前的writeup只有前面的一些简单题，其它的题等我会做了，我会更新此文章。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.loli.net/2019/08/10/nrcgqaoVtNBpMCu.jpg">
@@ -44,7 +44,9 @@
 <meta property="og:image" content="https://i.loli.net/2019/08/11/FRkonWbBi7XpMHC.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/08/11/EKv7FCnUmyiJNao.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/08/11/svzAL1iWR6tpgnG.jpg">
-<meta property="og:updated_time" content="2019-08-11T07:51:27.179Z">
+<meta property="og:image" content="https://i.loli.net/2019/08/11/SMWX1zEbA32oDgV.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/11/hmrIzNTkGdFqVyM.jpg">
+<meta property="og:updated_time" content="2019-08-11T09:03:11.426Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【BugkuCTF】杂项writeup">
 <meta name="twitter:description" content="目前的writeup只有前面的一些简单题，其它的题等我会做了，我会更新此文章。">
@@ -53,7 +55,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
-    <link rel="alternative" href="/atom.xml" title="文的个人博客" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Wen&#39;s Blog" type="application/atom+xml">
 
 
 
@@ -80,7 +82,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>【BugkuCTF】杂项writeup | 文的个人博客</title>
+<title>【BugkuCTF】杂项writeup | Wen&#39;s Blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -412,7 +414,11 @@
 <p><img src="https://i.loli.net/2019/08/11/EKv7FCnUmyiJNao.jpg" width="300"></p>
 <h2 id="做个游戏-08067CTF"><a href="#做个游戏-08067CTF" class="headerlink" title="做个游戏(08067CTF)"></a>做个游戏(08067CTF)</h2><p>将heiheihei.jar用JD-GUI打开，在PlaneGameFrame.class中可看到flag</p>
 <p><img src="https://i.loli.net/2019/08/11/svzAL1iWR6tpgnG.jpg" width="300"></p>
+<h2 id="Linux2"><a href="#Linux2" class="headerlink" title="Linux2"></a>Linux2</h2><p>得到的flag文件开头16进制为空，目前不知道怎么做，就根据题目给的提示直接在Hex中搜索KEY，结果还真的有flag。</p>
+<img src="https://i.loli.net/2019/08/11/SMWX1zEbA32oDgV.jpg" width="300">
 
+<h2 id="细心的大象"><a href="#细心的大象" class="headerlink" title="细心的大象"></a>细心的大象</h2><p>得到的大象图片中可以分离出一个rar压缩包，只是需要密码，根据题目提示，我们在图片的属性中看到很多信息其中的备注很值得注意，进行base64解码后即为压缩包的密码，打开后修改图片高度即可看到flag。</p>
+<img src="https://i.loli.net/2019/08/11/hmrIzNTkGdFqVyM.jpg" width="300">
       
     </div>
     
@@ -423,7 +429,7 @@
         <p><span>本文标题:</span><a href="/2019/08/10/【BugkuCTF】杂项writeup/">【BugkuCTF】杂项writeup</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">hjw</a></p>
         <p><span>发布时间:</span>2019-08-10, 23:38:54</p>
-        <p><span>最后更新:</span>2019-08-11, 15:51:27</p>
+        <p><span>最后更新:</span>2019-08-11, 17:03:11</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2019/08/10/【BugkuCTF】杂项writeup/" title="【BugkuCTF】杂项writeup">http://hjw322.vip/2019/08/10/【BugkuCTF】杂项writeup/</a>
             <span class="copy-path" data-clipboard-text="原文: http://hjw322.vip/2019/08/10/【BugkuCTF】杂项writeup/　　作者: hjw" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -437,6 +443,12 @@
 
 
     <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2019/08/12/WhaleCTF WriteUp/">
+                    WhaleCTF WriteUp
+                </a>
+            </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
@@ -452,7 +464,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#签到题"><span class="toc-number">1.</span> <span class="toc-text">签到题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#这是一张单纯的图片"><span class="toc-number">2.</span> <span class="toc-text">这是一张单纯的图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#隐写"><span class="toc-number">3.</span> <span class="toc-text">隐写</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#telnet"><span class="toc-number">4.</span> <span class="toc-text">telnet</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#眼见非实-ISCCCTF"><span class="toc-number">5.</span> <span class="toc-text">眼见非实(ISCCCTF)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#啊哒"><span class="toc-number">6.</span> <span class="toc-text">啊哒</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#又一张图片，还单纯吗"><span class="toc-number">7.</span> <span class="toc-text">又一张图片，还单纯吗</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#猜"><span class="toc-number">8.</span> <span class="toc-text">猜</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#隐写2"><span class="toc-number">9.</span> <span class="toc-text">隐写2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多种方法解决"><span class="toc-number">10.</span> <span class="toc-text">多种方法解决</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#闪的好快"><span class="toc-number">11.</span> <span class="toc-text">闪的好快</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#白哥的鸽子"><span class="toc-number">12.</span> <span class="toc-text">白哥的鸽子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux"><span class="toc-number">13.</span> <span class="toc-text">linux</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#隐写3"><span class="toc-number">14.</span> <span class="toc-text">隐写3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#做个游戏-08067CTF"><span class="toc-number">15.</span> <span class="toc-text">做个游戏(08067CTF)</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#签到题"><span class="toc-number">1.</span> <span class="toc-text">签到题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#这是一张单纯的图片"><span class="toc-number">2.</span> <span class="toc-text">这是一张单纯的图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#隐写"><span class="toc-number">3.</span> <span class="toc-text">隐写</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#telnet"><span class="toc-number">4.</span> <span class="toc-text">telnet</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#眼见非实-ISCCCTF"><span class="toc-number">5.</span> <span class="toc-text">眼见非实(ISCCCTF)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#啊哒"><span class="toc-number">6.</span> <span class="toc-text">啊哒</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#又一张图片，还单纯吗"><span class="toc-number">7.</span> <span class="toc-text">又一张图片，还单纯吗</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#猜"><span class="toc-number">8.</span> <span class="toc-text">猜</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#隐写2"><span class="toc-number">9.</span> <span class="toc-text">隐写2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多种方法解决"><span class="toc-number">10.</span> <span class="toc-text">多种方法解决</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#闪的好快"><span class="toc-number">11.</span> <span class="toc-text">闪的好快</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#白哥的鸽子"><span class="toc-number">12.</span> <span class="toc-text">白哥的鸽子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux"><span class="toc-number">13.</span> <span class="toc-text">linux</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#隐写3"><span class="toc-number">14.</span> <span class="toc-text">隐写3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#做个游戏-08067CTF"><span class="toc-number">15.</span> <span class="toc-text">做个游戏(08067CTF)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux2"><span class="toc-number">16.</span> <span class="toc-text">Linux2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#细心的大象"><span class="toc-number">17.</span> <span class="toc-text">细心的大象</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn,
@@ -483,7 +495,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"【BugkuCTF】杂项writeup　| 文的个人博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"【BugkuCTF】杂项writeup　| Wen's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -527,7 +539,9 @@ e.parentNode.insertBefore(j, e);
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2019/08/12/WhaleCTF WriteUp/" title="上一篇: WhaleCTF WriteUp">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
@@ -539,7 +553,7 @@ e.parentNode.insertBefore(j, e);
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/08/10/【BugkuCTF】杂项writeup/">【BugkuCTF】杂项writeup</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/18/mac下使用hexo+github简单搭建个人博客/">mac下使用hexo+github简单搭建个人博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/16/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/08/12/WhaleCTF WriteUp/">WhaleCTF WriteUp</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/10/【BugkuCTF】杂项writeup/">【BugkuCTF】杂项writeup</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/18/mac下使用hexo+github简单搭建个人博客/">mac下使用hexo+github简单搭建个人博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/16/hello-world/">Hello World</a></li></ul>
 
 
 
